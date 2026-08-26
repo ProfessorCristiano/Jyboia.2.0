@@ -3,7 +3,7 @@ rem ====================================================
 rem            Iniciando Jyboia IDE 2.0
 rem ====================================================
 
-set PYTHON_EXE=C:\Users\%USERNAME%\AppData\Local\Programs\Thonny\python.exe
+set PYTHON_EXE=C:\Python314\python.exe
 
 if exist "%PYTHON_EXE%" (
     "%PYTHON_EXE%" "%~dp0iniciar_jyboia.py" %*

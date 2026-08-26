@@ -1,0 +1,9 @@
+# ==========================================
+# Exemplo 1: Olá Mundo em Jybóia (.jy)
+# ==========================================
+
+nome = "Estudante"
+linguagem = "Português Estruturado"
+
+escreva("Bem-vindo ao Jyboia IDE!")
+escreva("Ola, ", nome, "! Programando em ", linguagem)

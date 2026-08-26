@@ -1,0 +1,15 @@
+# ==========================================
+# Exemplo 3: Tabuada Completa com Laço Para (.jy)
+# ==========================================
+
+numero = 7
+
+escreva("Tabuada do", numero)
+escreva("------------------------")
+
+para i em intervalo(1, 11):
+    resultado = numero * i
+    escreva(numero, " x ", i, " = ", resultado)
+
+escreva("------------------------")
+escreva("Fim da Tabuada!")

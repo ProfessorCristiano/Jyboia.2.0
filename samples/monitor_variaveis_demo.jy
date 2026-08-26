@@ -1,0 +1,19 @@
+# =======================================================
+# Exemplo 4: Demonstração do Monitor de Variáveis (.jy)
+# Observe como a tabela de Variáveis é atualizada!
+# =======================================================
+
+contador = 0
+soma_acumulada = 0
+lista_pares = []
+
+enquanto contador < 10:
+    contador = contador + 1
+    soma_acumulada = soma_acumulada + contador
+    
+    se contador % 2 == 0:
+        lista_pares.append(contador)
+
+escreva("Total de repeticoes:", contador)
+escreva("Soma acumulada:", soma_acumulada)
+escreva("Numeros pares encontrados:", lista_pares)

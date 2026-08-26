@@ -87,4 +87,3 @@ Jybóia 2.0/
 ```
 
 
-![Jybóia Mascote](./logo-mascote.png)

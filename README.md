@@ -1,7 +1,8 @@
-# 🐍 Jybóia IDE 2.0 (Fork do Thonny IDE)
+# ![Jybóia Logo](./logo.png) Jybóia IDE 2.0 (Fork do Thonny IDE)
 
 **Jybóia IDE** é um Ambiente de Desenvolvimento Integrado focado no ensino de programação para falantes da língua portuguesa. É construído como um **Fork direto do Thonny IDE**, integrando um transpilador nativo que converte código em **Português Estruturado (`.jy`)** para **Python padrão (`.py`)** e o executa no interpretador Python do sistema.
 
+![Jybóia Mascote](./logo-mascote.png)
 ---
 
 ## ✨ Recursos Principais

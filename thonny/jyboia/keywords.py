@@ -96,6 +96,7 @@ FUNCOES_EMBUTIDAS: Dict[str, str] = {
     "imprimir": "print",
     "mostrar": "print",
     "mostre": "print",
+    "exiba": "print",
     "leia": "input",
     "ler": "input",
     "leia_texto": "input",

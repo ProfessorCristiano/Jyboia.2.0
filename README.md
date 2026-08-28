@@ -47,6 +47,7 @@
 ## 🚀 Como Iniciar
 
 Necessário ter o Python instalado. 
+
 Usuário iniciantes: Recomendo instalar o Thonny IDE antes (https://thonny.org/) ele garante uma instalação do Python para o perfil de usuário comum.
 
 ### Opção 1: Pelo arquivo executável (.bat)

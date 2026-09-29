@@ -1,0 +1,6 @@
+# Dependencias opcionais/recomendadas para o Jyboia 2.0
+# Nota: A biblioteca grafica basica (Tkinter) vem junto com o instalador padrao do Python.
+# As dependencias seriais e utilitarios estao embutidos em thonny/vendored_libs.
+send2trash>=1.8.0
+packaging>=21.0
+docutils>=0.17

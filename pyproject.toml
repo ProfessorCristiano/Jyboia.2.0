@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "jyboia"
+version = "2.0.0"
+description = "Jybóia IDE — Ambiente de programação em Português Estruturado"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["ide", "education", "portuguese", "programming", "transpiler"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Software Development :: Interpreters",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "send2trash>=1.8",
+    "packaging>=21.0",
+    "docutils>=0.17",
+]
+
+[project.scripts]
+# Após "pip install .", o comando "jyboia" fica disponível no terminal
+jyboia = "thonny.main:run"
+
+[tool.setuptools.packages.find]
+# Encontra automaticamente thonny e thonny.jyboia e thonny.plugins, etc.
+where = ["."]
+include = ["thonny*"]
+
+[tool.setuptools.package-data]
+"thonny" = [
+    "VERSION",
+    "defaults.ini",
+    "res/**/*",
+    "locale/**/*",
+]
+"thonny.jyboia" = ["*.py"]
+"thonny.plugins" = ["*.py"]

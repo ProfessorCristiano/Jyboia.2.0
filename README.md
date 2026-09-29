@@ -2,6 +2,7 @@
 ---
 ![Jybóia Logo](./logo.png) 
 ---
+
 **Jybóia IDE** é um Ambiente de Desenvolvimento Integrado focado no ensino de programação para falantes da língua portuguesa. É construído como um **Fork direto do Thonny IDE**, integrando um transpilador nativo que converte código em **Português Estruturado (`.jy`)** para **Python padrão (`.py`)** e o executa no interpretador Python do sistema.
 
 ---
@@ -44,21 +45,83 @@
 
 ---
 
-## 🚀 Como Iniciar
+## 🚀 Como Instalar e Executar
 
-Necessário ter o Python instalado. 
+Existem **três modos de distribuição**, escolha o que melhor se adapta ao seu ambiente:
 
-Usuário iniciantes: Recomendo instalar o Thonny IDE antes (https://thonny.org/) ele garante uma instalação do Python para o perfil de usuário comum.
+---
 
-### Opção 1: Pelo arquivo executável (.bat)
-Dê um duplo clique no arquivo:
-```cmd
-iniciar_jyboia.bat
+### 🟢 Modo A — Versão Portable Autônoma (Recomendado para alunos no Windows)
+
+> Não precisa instalar Python. Funciona em qualquer Windows (10 ou 11) de forma 100% autônoma e isolada.
+
+1. Acesse a página de **[Releases no GitHub](https://github.com/ProfessorCristiano/Jyboia.2.0/releases/latest)**
+2. Baixe o arquivo **`Jyboia-Portable-Windows.zip`**
+3. Extraia o `.zip` em qualquer pasta (Desktop, pen drive, etc.)
+4. Abra a pasta extraída `dist/Jyboia` (formato Onedirectory oficial com `_internal/` e `samples/`) e dê duplo clique em **`Jyboia.exe`** 🎉
+
+> 💡 A pasta pode ser copiada para um pen drive e usada em qualquer computador Windows sem instalação.
+> 💡 Ao executar um novo código sem salvar, o Jybóia solicita o salvamento como `.jy` ou cria automaticamente `unsaved.jy`, garantindo que comandos como `escreva()` e `leia()` funcionem perfeitamente.
+
+---
+
+### 🟡 Modo B — Versão Leve Universal / Multiplataforma (Windows e Linux)
+
+> Para quem **já possui Python (>= 3.9) instalado**. Não requer compilação pesada e inclui identificação inteligente do Python.
+
+1. Baixe o arquivo **`Jyboia-Universal.zip`** (em `dist/Jyboia-Universal`)
+2. Extraia o `.zip` no seu computador
+3. **No Windows:**
+   - Dê duplo clique em **`iniciar_jyboia.bat`**. O launcher detecta automaticamente a instalação correta do Python no Windows (via `py -3`, PATH, AppData, Program Files ou Registro) e valida o suporte a Tkinter.
+4. **No Linux ou macOS:**
+   - Abra o terminal na pasta e execute:
+     ```bash
+     chmod +x iniciar_jyboia.sh
+     ./iniciar_jyboia.sh
+     ```
+   - O script localiza o interpretador `python3` e valida se o pacote `python3-tk` está presente, exibindo dicas de instalação se necessário.
+
+---
+
+### 🔵 Modo C — Instalação via `pip` (Para desenvolvedores Python)
+
+> Compatível com Windows, Linux e macOS. Requer Python 3.9 ou superior.
+
+```bash
+# 1. Clone ou baixe o projeto
+git clone https://github.com/ProfessorCristiano/Jyboia.2.0.git
+cd Jyboia.2.0
+
+# 2. (Recomendado) Crie um ambiente virtual
+python -m venv .venv
+
+# Ativar no Windows:
+.venv\Scripts\activate
+
+# Ativar no Linux/macOS:
+source .venv/bin/activate
+
+# 3. Instale o projeto
+pip install .
+
+# 4. Execute
+jyboia
 ```
 
-### Opção 2: Pelo Terminal / Prompt de Comando
+Após a instalação, o comando `jyboia` fica disponível diretamente no terminal.
+
+---
+
+### 🛠️ Modo D — Execução direta pelo código-fonte
+
 ```cmd
 python iniciar_jyboia.py
+```
+
+Ou pelo arquivo `.bat` no Windows:
+
+```cmd
+iniciar_jyboia.bat
 ```
 
 ---
@@ -67,8 +130,17 @@ python iniciar_jyboia.py
 
 ```
 Jybóia 2.0/
-├── iniciar_jyboia.bat             # Launcher rápido para Windows
-├── iniciar_jyboia.py              # Ponto de entrada Python
+├── iniciar_jyboia.bat             # Launcher inteligente Windows com detecção automática do Python
+├── iniciar_jyboia.sh              # Launcher Linux/macOS com checagem de Tkinter
+├── iniciar_jyboia.py              # Ponto de entrada Python multiplataforma
+├── build_portable.py / .bat       # Gerador da versão Portable Onedir com Python embutido
+├── build_universal.py / .bat      # Gerador da versão Universal leve para Windows e Linux
+├── pyproject.toml                 # Config para "pip install ." (Modo C)
+├── requirements.txt               # Dependências opcionais do projeto
+├── jyboia.spec                    # Config do PyInstaller para o Portable Onedirectory
+├── logo.ico                       # Ícone do executável Windows
+├── logo.png                       # Logotipo PNG
+├── logo-mascote.png               # Mascote da Jybóia
 ├── PLANEJAMENTO_PROJETO.md        # Documentação arquitetural completa
 ├── samples/                       # Exemplos práticos em .jy e .py
 │   ├── ola_mundo.jy / .py
@@ -89,5 +161,4 @@ Jybóia 2.0/
     ├── running.py                 # Interceptação de .jy e execução no Python
     └── workbench.py               # Janela principal do Jybóia IDE
 ```
-
 

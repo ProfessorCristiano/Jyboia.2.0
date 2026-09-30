@@ -55,7 +55,7 @@ Existem **três modos de distribuição**, escolha o que melhor se adapta ao seu
 
 > Não precisa instalar Python. Funciona em qualquer Windows (10 ou 11) de forma 100% autônoma e isolada.
 
-1. Acesse a página de **[Releases no GitHub](https://github.com/ProfessorCristiano/Jyboia.2.0/releases/tag/Portable)**
+1. Acesse a página de **[Releases no Portable](https://github.com/ProfessorCristiano/Jyboia.2.0/releases/tag/Portable)**
 2. Baixe o arquivo **`Jyboia-Portable-Windows.zip`**
 3. Extraia o `.zip` em qualquer pasta (Desktop, pen drive, etc.)
 4. Abra a pasta extraída `dist/Jyboia` (formato Onedirectory oficial com `_internal/` e `samples/`) e dê duplo clique em **`Jyboia.exe`** 🎉
@@ -69,7 +69,7 @@ Existem **três modos de distribuição**, escolha o que melhor se adapta ao seu
 
 > Para quem **já possui Python (>= 3.9) instalado**. Não requer compilação pesada e inclui identificação inteligente do Python.
 
-1. Baixe o arquivo **`Jyboia-Universal.zip`** (em `dist/Jyboia-Universal`)
+1. Baixe o arquivo **`Jyboia-Universal.zip`**[Releases no Padrão](https://github.com/ProfessorCristiano/Jyboia.2.0/releases/tag/Jyboia-Padrao)
 2. Extraia o `.zip` no seu computador
 3. **No Windows:**
    - Dê duplo clique em **`iniciar_jyboia.bat`**. O launcher detecta automaticamente a instalação correta do Python no Windows (via `py -3`, PATH, AppData, Program Files ou Registro) e valida o suporte a Tkinter.

@@ -55,7 +55,7 @@ Existem **três modos de distribuição**, escolha o que melhor se adapta ao seu
 
 > Não precisa instalar Python. Funciona em qualquer Windows (10 ou 11) de forma 100% autônoma e isolada.
 
-1. Acesse a página de **[Releases no GitHub](https://github.com/ProfessorCristiano/Jyboia.2.0/releases/latest)**
+1. Acesse a página de **[Releases no GitHub](https://github.com/ProfessorCristiano/Jyboia.2.0/releases/tag/Portable)**
 2. Baixe o arquivo **`Jyboia-Portable-Windows.zip`**
 3. Extraia o `.zip` em qualquer pasta (Desktop, pen drive, etc.)
 4. Abra a pasta extraída `dist/Jyboia` (formato Onedirectory oficial com `_internal/` e `samples/`) e dê duplo clique em **`Jyboia.exe`** 🎉
